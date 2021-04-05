@@ -1,0 +1,31 @@
+extends layout.pug
+
+block content
+  
+    
+
+   
+
+    form.upload_page(method="POST" action="/upload" enctype="multipart/form-data")
+      
+      div.title 
+      
+        h1.upload_h1  Uploading image
+        if error
+          p.error= error
+        if success
+          p.success Note is saved.
+        div.upload_container
+          label.label_title Title 
+          input(class="input image-title" name="title")
+      div.upload_img
+        label.label_img Image 
+        
+        input.upload_i(type="file" name="image" class="input image-image" accept="image/*")
+        br
+        label.label_des Description:
+        br
+        textarea(class="input image-desc" name="description" rows="5")
+        br
+        button.create-note-btn#btn Upload
+        

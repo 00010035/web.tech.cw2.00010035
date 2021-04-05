@@ -1,0 +1,15 @@
+extends layout.pug
+
+block content
+    
+    div.images_page
+        h2.images_title All images
+        if(success)
+            p.success Deleted
+        div.images_top
+            ul#container.allimages
+            img(id="images_hover")
+
+            script(src="/scripts/images.js")
+            
+           

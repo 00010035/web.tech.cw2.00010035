@@ -1,0 +1,12 @@
+mixin link(href, name)
+	a(href=href)&attributes(attributes)= name
+
+header.navbar
+
+		div.header_con
+			h1.header_logo
+				a(href="/") Header
+			nav.nav
+				ul.nav-items
+					li.nav-item
+						+link('/image', 'All images')(class="nav-link")
