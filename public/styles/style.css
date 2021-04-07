@@ -156,6 +156,7 @@ title {
 .create-note-btn {
   display: inline-flex;
   text-align: center;
+  margin-bottom: 10px;
   padding: 10px 20px;
   font-size: 1.2rem;
   font-family: var(--text-font);
@@ -199,7 +200,7 @@ title {
   padding: 2px 0px 5px 0px;
 }
 .upload_container {
-  padding: 100px 0px 0px 100px;
+  padding: 70px 0px 0px 100px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -213,12 +214,19 @@ title {
 .images_page .allimages {
   padding: 30px 0px 0px 100px;
 }
+.allimages .title {
+  color: var(--text-color-p);
+}
 
 .images_page .image {
   margin-top: 25px;
 }
 .images_delete {
   float: right;
+  color: black;
+}
+.images_delete:hover {
+  color: var(--text-color-f);
 }
 .images_top {
   display: grid;
@@ -226,22 +234,26 @@ title {
 }
 .images_page .image:hover {
   transition: 0.3s;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #images_hover {
+  height: 250px;
+  padding: 1px;
   max-width: 100%;
-  padding: 30px 30px 0px 0px;
+  margin: 30px 30px 0px 0px;
+  border: 1px solid var(--text-color-f);
 }
 .images_page ul {
   list-style: none;
 }
 .images_page ul li {
-  border: 1px solid;
+  border-bottom: 1.2px dashed;
   width: 60%;
 }
+
 .images_page ul li::before {
   content: "\2022";
-  color: var(--text-color-p);
+  color: var(--text-color-f);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -249,7 +261,7 @@ title {
 }
 .success {
   display: inline-block;
-  margin: 20px 0 0 20px;
+  margin: 40px 0px 0px 113px;
   padding: 10px;
   border: 1px solid green;
   font-size: 1.3rem;
@@ -257,7 +269,7 @@ title {
 }
 .error {
   display: inline-block;
-  margin: 20px 0 0 20px;
+  margin: 40px 0px 0px 113px;
   padding: 10px;
   font-size: 1.3rem;
   border: 1px solid red;
@@ -270,7 +282,40 @@ title {
 .details_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0px 0px 0px 100px;
 }
-.details {
-  width: 50%;
+.details_description {
+  background-color: rgba(212, 9, 185, 0.2);
+}
+#description {
+  padding: 45px 50px;
+}
+.nameofimg {
+  margin: 20px 10%;
+  padding-left: 5px;
+  font-size: 1.5rem;
+  border-left: 3px solid var(--text-color-p);
+}
+.containerforimage {
+  padding: 10px 0px;
+  height: 250px;
+  width: 350px;
+}
+
+.details_image {
+  height: 100%;
+  width: 100%;
+}
+.btn_back {
+  float: right;
+  margin-top: 45px;
+  padding: 5px;
+  font-size: 1.4rem;
+  border: 1px solid var(--text-color-f);
+  border-radius: 5px;
+}
+.btn_back:hover {
+  background-color: var(--text-color-f);
+  color: white;
+  transition: 0.7s;
 }

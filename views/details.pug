@@ -3,9 +3,10 @@ extends layout.pug
 block content
     .container
         h2.details_title Details 
-        h3#title.details 
+        h3#title.nameofimg 
         div.details_container
-            img#image.details
-            p#description.details
-        a(href="/image") Back 
+            div.containerforimage
+                img#image.details_image
+            p#description.details_description
+        a.btn_back(href="/image") Back 
     script(src="/scripts/details.js") 
