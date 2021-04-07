@@ -59,6 +59,15 @@ ul {
   font-size: 22px;
   font-weight: 800;
 }
+.about_website {
+  font-family: var(--text-font);
+  margin: 50px;
+  line-height: 2.5rem;
+}
+.about_website ul {
+  padding-left: 40px;
+  line-height: 2rem;
+}
 .nav-items a {
   color: black;
 }
@@ -114,7 +123,7 @@ ul {
 
 /* Copyright */
 .text_vnizu {
-  margin-top: 43%;
+  margin-top: 19%;
   padding-left: 10px;
 }
 /* --------------------------PAGE 1 END -------------------------------------------*/
@@ -251,7 +260,8 @@ title {
   width: 60%;
 }
 
-.images_page ul li::before {
+.images_page ul li::before,
+.about_website ul li::before {
   content: "\2022";
   color: var(--text-color-f);
   font-weight: bold;
@@ -288,7 +298,7 @@ title {
   background-color: rgba(212, 9, 185, 0.2);
 }
 #description {
-  padding: 45px 50px;
+  padding: 16px 22px;
 }
 .nameofimg {
   margin: 20px 10%;
